@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>First Tailwind</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-0 m-0 text-gray-800">
+    <!-- Hoe Pamge -->
+    <section>
+      <div class="container my-5 p-2 mx-auto bg-purple-200">
+        <div class="flex">
+          <a
+            class="text-3xl font-bold px-2 bg-red-500 text-white"
+            href="Guna-resume.pdf"
+            >BIO-DATA</a
+          >
+          <div class="flex ml-2">
+            <button onclick="menuClick()" class="p-2 md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25"
+                />
+              </svg>
+            </button>
+            <ul class="hidden md:flex font-bold text-gray-600 mt-1 mx-1">
+              <li class="pr-2">
+                <a
+                  class="px-2 py-2 hover:border border-blue-600 rounded"
+                  href=""
+                  >Home</a
+                >
+              </li>
+              <li class="pr-2">
+                <a
+                  class="px-2 py-2 hover:border border-blue-600 rounded"
+                  href="#About me"
+                  >About me</a
+                >
+              </li>
+              <li class="pr-2">
+                <a
+                  class="px-2 py-2 hover:border border-blue-600 rounded"
+                  href="portfolio/"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="pr-2">
+                <a
+                  class="px-2 py-2 hover:border border-blue-600 rounded"
+                  href="#Contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden" id="mobileMenu">
+          <ul class="md:hidden font-bold text-gray-600">
+            <li class="mt-2">
+              <a class="hover:border border-b-blue-600 p-2" href="">Home</a>
+            </li>
+            <li class="mt-2">
+              <a class="hover:border border-b-blue-600 p-2" href="#About me"
+                >About me</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="hover:border border-b-blue-600 p-2" href="portfolio/"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mt-2">
+              <a class="hover:border border-b-blue-600 p-2" href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="flex py-12 lg:py-32">
+          <div class="w-full md:w-1/2">
+            <h2 class="text-3xl md:text-6xl font-bold text-center">
+              <span class="p-2 text-xl md:text-3xl">I am</span
+              ><br />Gunachandran.P
+            </h2>
+            <p
+              class="p-2 italic text-base md:text-2xl font-bold text-gray-600 text-center"
+            >
+              "Frontend Developer"
+            </p>
+            <div class="flex justify-center mt-10">
+              <button
+                onclick="contact()"
+                class="mr-5 bg-green-500 text-white text-lg px-3 py-2 rounded"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <img class="md:hidden" src="logo.png" alt="" />
+            <img class="hidden md:block h-15 w-auto" src="Guna-Main.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About me Page-->
+    <section>
+      <div
+        id="About me"
+        class="container block md:flex item-center mx-auto my-5"
+      >
+        <div class="m-2 w-fitt md:w-1/3 p-2 bg-sky-100">
+          <img class="md:h-48 md:w-96 rounded-2xl mx-auto" src="school.JPG" />
+          <p class="p-6 tracking-wider font-bold text-xl text-center md:3xl">
+            P.L.W.A.Hr.Sec.School - Tirunelveli <br />
+            <span class="text-3xl md:text-4xl text-orange-800"
+              >HSC presentagge - 72.83%</span
+            >
+            <br />
+            2007 - 2008
+          </p>
+        </div>
+        <div class="m-2 w-fitt md:w-1/3 p-2 bg-sky-100">
+          <img
+            class="md:h-48 md:w-96 rounded-2xl mx-auto"
+            src="collage.jpg"
+            alt=""
+          />
+          <p class="p-6 tracking-wider font-bold text-xl text-center md:3xl">
+            Thiruvalluvar college - Tirunelveli <br />
+            <span class="text-3xl md:text-4xl text-orange-800"
+              >B.A.,(Tamil) presentage - 63.30%</span
+            >
+            <br />
+            2008 - 2011
+          </p>
+        </div>
+        <div class="m-2 w-fitt md:w-1/3 p-2 bg-sky-100">
+          <img
+            class="md:h-48 md:w-96 rounded-2xl mx-auto"
+            src="Entri-Elevate.jpg"
+            alt=""
+          />
+          <p class="p-6 tracking-wider font-bold text-xl text-center md:3xl">
+            Entri Elevate - Bangalore <br />
+            <span class="text-3xl md:text-4xl text-orange-800"
+              >Full Stack Web Developer</span
+            >
+            <br />
+            2023
+          </p>
+        </div>
+      </div>
+      <div class="container flex-col text-center mx-auto bg-purple-200">
+        <h2 class="font-bold text-xl underline text-gray-600 pt-5">Skills</h2>
+        <ul class="font-bold text-2xl p-3 text-purple-900 md:text-4xl">
+          <li class="p-1 bg-purple-300">React JS</li>
+          <li class="p-1">Tailwind CSS</li>
+          <li class="p-1 bg-purple-300">JavaScript</li>
+          <li class="p-1">CSS</li>
+          <li class="p-1 bg-purple-300">HTML</li>
+          <li class="p-1">Ms Office</li>
+          <li class="p-1 pb-4 bg-purple-300">MasterCam</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Contact Page -->
+    <section>
+      <div
+        id="Contact"
+        class="container block md:flex-col text-center mx-auto my-5"
+      >
+        <div>
+          <h1 class="font-bold text-2xl underline text-gray-600 p-5">
+            Contact
+          </h1>
+          <div class="font-semibold md:font-bold md:text-xl p-2">
+            <p class="p-2">
+              3/250, South Street, Arumugampatti, Vickramasingapuram (post),
+              Ambasamudram (Taluk), Tirunelveli (Distric), Tamilnadu - 627425
+            </p>
+            <p class="p-2">
+              <span class="text-gray-600">Phone Number:</span>
+              <span class="text-xl italic underline md:text-2xl"
+                ><a href="">+91 8608464647</a></span
+              >
+            </p>
+            <p class="p-2">
+              <span class="text-gray-600">E-mail id:</span>
+              <span class="text-xl italic underline md:text-2xl"
+                ><a href="chandiran2824@gmail.com"
+                  >chandiran2824@gmail.com</a
+                ></span
+              >
+            </p>
+            <p class="p-2">
+              <span class="text-gray-600">Passport Number:</span>
+              <span class="text-xl italic underline md:text-2xl"
+                ><a href="">U8770860</a></span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="m-2 p-5 flex justify-center">
+          <a href=""
+            ><img class="h-10 w-10 p-1 m-2" src="whats app.png" alt=""
+          /></a>
+          <a href=""><img class="h-10 w-10 p-1 m-2" src="fb.png" alt="" /></a>
+          <a href=""
+            ><img class="h-10 w-10 p-1 m-2" src="insta.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <script>
+      function contact() {
+        alert("My Contact Number +91 8608464647");
+      }
+
+      function menuClick() {
+        var menu = document.getElementById("mobileMenu");
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      }
+    </script>
+  </body>
+</html>
